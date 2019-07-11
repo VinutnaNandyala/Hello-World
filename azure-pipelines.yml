@@ -25,4 +25,4 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     path: $(System.DefaultWorkingDirectory)/bin/WebApp
-    artifact: WebApp   
+    artifact: 1.0-SNAPSHOT
