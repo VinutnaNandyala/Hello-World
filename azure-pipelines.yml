@@ -23,4 +23,4 @@ steps:
     
 - task: DownloadPipelineArtifact@2
   inputs:
-   artifact:  SampleWebApplication.war
+   artifact: '*.war'
