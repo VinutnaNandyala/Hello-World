@@ -21,7 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     
-- task: PublishPipelineArtifact@1
+- task: DownloadPipelineArtifact@2
   inputs:
-    path: $(System.DefaultWorkingDirectory)/bin/WebApp
-    artifact: 1.0-SNAPSHOT
+   artifact: 1.0-SNAPSHOT
