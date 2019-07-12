@@ -31,5 +31,4 @@ steps:
   inputs:
     source: 'specific'
     project: 'VinuDemo'
-    pipeline: '$(System.DefinitionId)'
     runVersion: 'latest'
