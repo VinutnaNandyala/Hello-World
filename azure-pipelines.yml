@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Maven@3
+- task: Maven@1
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -27,9 +27,9 @@ steps:
    artifact: '$(build.artifactstaginglocation)'
    
    # Download artifacts from a specific pipeline.
-- task: DownloadPipelineArtifact@2
+- task: DownloadPipelineArtifact@3
   inputs:
     source: 'specific'
     project: 'VinuDemo'
-    pipeline: 1
+    pipeline: '$(System.DefinitionId)'
     runVersion: 'latest'
