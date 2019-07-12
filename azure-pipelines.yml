@@ -26,9 +26,4 @@ steps:
   inputs:
    artifact: '$(build.artifactstaginglocation)'
    
-   # Download artifacts from a specific pipeline.
-- task: DownloadPipelineArtifact@3
-  inputs:
-    source: 'specific'
-    project: 'VinuDemo'
-    runVersion: 'latest'
+ 
