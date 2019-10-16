@@ -12,6 +12,7 @@ pool:
 steps:
 - script: |
    echo Write your commands here
+   echo Hi
    
 - task: Maven@1
   inputs:
