@@ -16,7 +16,7 @@ steps:
    
 - task: Maven@1
   inputs:
-    mavenPomFile: 'pom.xml'
+    mavenPomFile: 'po.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
